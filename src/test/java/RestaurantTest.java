@@ -72,6 +72,16 @@ public class RestaurantTest {
 
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    @Test
+    public void display_order_value_failed_test_case(){
+        restaurant =new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);
+
+        restaurant.addToMenu("Sweet corn soup",119);
+        restaurant.addToMenu("Vegetable lasagne", 269);
+
+        assertEquals(388,restaurant.orderTotal_value());
+    }
+
 
 }
 

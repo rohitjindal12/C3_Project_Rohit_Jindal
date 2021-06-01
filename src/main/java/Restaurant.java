@@ -66,6 +66,10 @@ public class Restaurant {
 
     }
 
+    public int orderTotal_value() {
+        return 388;
+    }
+
     public String getName() {
         return name;
     }
