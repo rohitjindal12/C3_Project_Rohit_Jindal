@@ -28,9 +28,9 @@ public class Restaurant {
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
 
     public List<Item> getMenu() {
-        if(isRestaurantOpen()==true)
+        if(isRestaurantOpen()==true) {
             return menu;
-
+        }
         return null;
         }
 
